@@ -1,0 +1,29 @@
+*{
+    color: white;
+    font-family: Arial;
+    margin: 0;
+    border: border-box;
+}
+/* NAVBAR class */
+.NAVBAR{
+    height: 60px;
+    background-color: aqua;
+    color: white;
+    
+}
+/* box-1 */
+.box-1{
+    height: 50px;
+    width: 200px;
+    background-color: brown;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+}
+/* logo class */
+.logo{
+    display: flex;
+    font-size: 2rem;
+    height: 100px;
+    
+}
