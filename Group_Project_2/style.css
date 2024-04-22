@@ -16,10 +16,10 @@
 }
 /* border class */
 .border{
-    border: 1.5px solid transparent;
+    border: 2px solid transparent;
 }
 .border :hover{
-    border: 1.5px solid rgb(107, 16, 16);
+    border: 2px solid rgb(248, 245, 245);
 
 }
 /* box-1 */
