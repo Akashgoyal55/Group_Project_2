@@ -7,23 +7,48 @@
 /* NAVBAR class */
 .NAVBAR{
     height: 60px;
-    background-color: aqua;
+    background-color: rgb(15, 12, 12);
     color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
+}
+/* border class */
+.border{
+    border: 1.5px solid transparent;
+}
+.border :hover{
+    border: 1.5px solid rgb(107, 16, 16);
+
 }
 /* box-1 */
 .box-1{
     height: 50px;
     width: 200px;
-    background-color: brown;
-    position: absolute;
+    background-color: rgba(66, 117, 227, 0.731);
     top: 4px;
     left: 4px;
+    border-radius: 0.5rem;
 }
 /* logo class */
 .logo{
     display: flex;
     font-size: 2rem;
-    height: 100px;
+    height: 40px;
+    
+}
+/* box-2 */
+.box-2{
+    margin-right: 100px;
+    
+    
+}
+.language select{
+    width: 100px;
+    padding: 5px;
+    margin-right: 100px;
+    color: rgb(16, 16, 16);
+    background-color: rgb(102, 158, 241);
     
 }
