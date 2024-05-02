@@ -1,65 +1,78 @@
 *{
-    color: white;
-    font-family: Arial;
     margin: 0;
+    font-family: Arial;
     border: border-box;
 }
-/* NAVBAR class */
-.NAVBAR{
+.navbar{
     height: 60px;
-    background-color: rgb(15, 12, 12);
+    background-color: #0f1111;
     color: white;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     
 }
-/* border class */
+
+/*BOX-1*/
+.nav-logo{
+    height: 50px;
+    width: 100px;
+}
+.logo{
+    height: 50px;
+    width: 100%;
+    background-size: cover;
+}
 .border{
     border: 2px solid transparent;
 }
-.border :hover{
-    border: 2px solid rgb(248, 245, 245);
+.border:hover{
+    border: 1.5px solid white;
+}
+
+/*Box-2*/
+.Language-box{
+    height: 35px;
+    width: 100px;
+    margin-left: 800px;
+}
+.Language-box{
+    text-align: center;
+    margin-top: 7px;
+    font-size: 1rem;
+    
+}
+
+/* Box-3*/
+.login-page{
+    height: 30px;
+    width: 90px;
+    text-align: center;
+    margin-left: 50px;
 
 }
-/* box-1 */
-.box-1{
-    height: 50px;
-    width: 200px;
-    background-color: rgba(66, 117, 227, 0.731);
-    top: 4px;
-    left: 4px;
-    border-radius: 0.5rem;
-}
-/* logo class */
-.logo{
-    display: flex;
-    font-size: 2rem;
-    height: 40px;
-    
-}
-/* box-2 */
-.box-2{
-    margin-right: 100px;
-    
-    
-}
-.language select{
-    width: 100px;
-    padding: 5px;
-    margin-right: 100px;
-    color: rgb(16, 16, 16);
-    background-color: rgb(102, 158, 241);
-    
-}
- h2{
-    color: black;
-    font-size: 2.5rem;
+.sign-in{
     text-align: center;
-    margin-top: 10px;
-    font-family: "Alfa Slab One", serif;
-    font-weight: 400;
-    font-style: normal;
- }
+    font-size: 1.1rem;
+
+}
+
+/*Welcome-box*/
+.Welcome-box{
+    height: 150px;
+    background-color: chocolate;
+}
+
+/*SF img*/
+.sf-img{
+    background-image: url("Navbar.jpeg");
+    height: 500px;
+    background-size: cover;
+}
+
+/*Welcome-box*/
+.Welcome-box{
+    font-size: 2rem;
+    text-align: center;
+}
   
   
