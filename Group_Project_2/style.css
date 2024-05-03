@@ -58,21 +58,38 @@
 
 /*Welcome-box*/
 .Welcome-box{
-    height: 150px;
+    height: 80px;
     background-color: chocolate;
+    font-size: 3rem;
+    text-align: center;
 }
 
 /*SF img*/
 .sf-img{
     background-image: url("Navbar.jpeg");
-    height: 500px;
+    height: 300px;
+    width: 100%;
     background-size: cover;
+    background-size: contain;
 }
 
-/*Welcome-box*/
-.Welcome-box{
-    font-size: 2rem;
-    text-align: center;
+/*MAIN PAGE*/
+/*Top-attraction*/
+.Top-attraction{
+    display: flex;
+    margin-top: 5px;
+    flex-wrap: wrap;
+    margin-left: 10px;
 }
+.box{
+    border: 2px solid black;
+    height: 200px;
+    width: 23.5%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+
   
   
