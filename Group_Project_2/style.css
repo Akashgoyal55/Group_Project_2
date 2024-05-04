@@ -84,14 +84,28 @@
     margin-top: 5px;
     flex-wrap: wrap;
     margin-left: 10px;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+    
 }
 .box{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 200px;
     width: 23.5%;
     margin-right: 10px;
     margin-bottom: 10px;
     flex-wrap: wrap;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px 0px 15px;
+}
+.box-img{
+    height: 150px;
+    background-size: cover;
+}
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 /*CSS for login.html*/
