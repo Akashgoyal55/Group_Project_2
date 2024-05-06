@@ -172,6 +172,11 @@
   
 
   /*FOOTER PAGE*/
+
+  footer{
+    margin-top: 10px;
+
+  }
   .foot-panel-1{
     background-color: #37475a;
     color: white;
@@ -181,6 +186,47 @@
     align-items: center;
     font-size: 0.85rem;
   }
+  .foot-panel-2{
+    background-color: rgb(100, 99, 98);
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  ul{
+    margin-top: 10px;
+  }
+  ul a{
+    display: block;
+    color: white;  
+    font-size: 0.85rem;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.copyright{
+    margin-top: 250px;
+    margin-right: 250px;
+}
+
+/* Golden gate bridge */
+.Top-page{
+    background-color: orangered;
+    height: 500px;
+    color: white;
+    text-align: center;
+}
+.Top-image{
+    background-image: url('Box-1a.jpg');
+    height: 500px;
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+
+}
   
 
 
