@@ -91,5 +91,3 @@ document.querySelector('.back-to-top').addEventListener('click', function(e) {
       behavior: 'smooth'
   });
 });
-
-
