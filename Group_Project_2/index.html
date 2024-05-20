@@ -20,8 +20,10 @@
         <div class="Language">
           <i class="fa-solid fa-globe"></i>
           Language 
+          <div id="google_translate_element" style="display: inline-block;"></div>
         </div>
       </div>
+
 
       <!-- Box-3 -->
       <div class="login-page border">
@@ -37,10 +39,13 @@
 <div class="Welcome-box">
     <h2><i>WELCOME TO SAN FRANCISCO</i></h2>
 </div>
-    <!--Main page photo-->
-    <div class="sf-img"></div>
-    
 
+    <!--Main page photo-->
+    <div class="SF-IMAGE">
+      <div class="sf-img"></div>
+    </div>
+
+  
     <!--MAIN PAGE-->
 <div class="line"><a href=""><u>Top-attraction in SF</u></a></div>
     <div class="Top-attraction">
@@ -55,61 +60,88 @@
         </a>
       </div>
       <div class="box2 box">
+        <a href="fisherman.html">
         <div class="box-content">
           <h2>Fisherman's Wharf</h2>
           <div class="box-img" style="background-image: url('Box-2.jpeg');"></div>
           <p>See more</p>
         </div>
+      </a>
       </div>
       <div class="box3 box">
+        <a href="alcatraz.html">
         <div class="box-content">
           <h2>Alcatraz Island</h2>
           <div class="box-img" style="background-image: url('Box-3.jpg');"></div>
           <p>See more</p>
         </div>
+      </a>
       </div>
       <div class="box4 box">
+        <a href="CableCars.html">
         <div class="box-content">
           <h2>Cable Cars</h2>
           <div class="box-img" style="background-image: url('Box-4.jpeg');"></div>
           <p>See more</p>
         </div>
+      </a>
       </div>
       <div class="box5 box">
+        <a href="PaintedLadies.html">
         <div class="box-content">
           <h2>Painted Ladies</h2>
           <div class="box-img" style="background-image: url('Box-5.jpeg');"></div>
           <p>See more</p>
         </div>
+      </a>
       </div>
       <div class="box6 box">
+        <a href="LombardStreet.html">
         <div class="box-content">
           <h2>Lombard Street</h2>
           <div class="box-img" style="background-image: url('Box-6.jpeg');"></div>
           <p>See more</p>
         </div>
+      </a>
       </div>
       <div class="box7 box">
+        <a href="UnionSquare.html">
         <div class="box-content">
           <h2>Union Square</h2>
           <div class="box-img" style="background-image: url('Box-7.jpeg');"></div>
           <p>See more</p>
         </div>
+      </a>
       </div>
       <div class="box8 box">
+        <a href="TwinPeaks.html">
         <div class="box-content">
           <h2>Twin Peaks</h2>
           <div class="box-img" style="background-image: url('Box-8.jpeg');"></div>
           <p>See more</p>
         </div>
       </div>
+    </a>
     </div>
+
+    <!--Bar chart-->
+    <div class="container">
+      <h2></h2>
+      <div>
+        <canvas id="myChart" height="300px" width="900"></canvas>
+      </div>
+    </div>
+
+    <!--GRAPH-->
+    <!-- <canvas id="chartJSContainer" width="600px" height="200px"></canvas> -->
 
 
 <!--FOOTER-->
 <footer>
   <div class="foot-panel-1">
+    <a href="#" class="back-to-top">
     <pre> Back to top - </pre><i class="fa-solid fa-arrows-up-to-line"></i>
+  </a>
   </div>
 
   <div class="foot-panel-2">
@@ -133,9 +165,11 @@
   
 </footer>
 
-
+<!-- Include Chart.js library -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!--java script-->
+<script src="script.js"></script>
 </body>
 
-
-<script src="script.js"></script>
+ 
 </html>
