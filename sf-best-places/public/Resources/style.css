@@ -44,10 +44,9 @@
 
 /* Box-3*/
 .login-page{
-    height: 30px;
-    width: 90px;
     text-align: center;
-    margin-left: 50px;
+    margin-left: auto;
+    padding-right: 2rem;
 
 }
 .sign-in{
