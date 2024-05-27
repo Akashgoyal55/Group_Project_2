@@ -1,0 +1,94 @@
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 5rem auto;
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+p {
+  color: #666666;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #555555;
+  text-align: left;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+#forgot-password {
+  display: block;
+  margin-top: 20px;
+}
+
+.or-separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.or-separator span {
+  flex: 1;
+  height: 1px;
+  background: #cccccc;
+  margin: 0 10px;
+}
+
+#google-sign-in {
+  background-color: #db4437;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+#google-sign-in:hover {
+  background-color: #c33d2e;
+}
+
+#join-now {
+  margin-top: 20px;
+}
+  
