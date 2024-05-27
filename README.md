@@ -1,5 +1,8 @@
 # San Francisco Tourist Spots Data Visualization
 
+Deployed project link:- https://group-project-2.onrender.com
+
+
 ## Project Overview
 
 This project is an interactive and informative website designed to visualize survey data on the most liked tourist spots in San Francisco. By integrating various web technologies, the site provides a seamless user experience for tourists looking to explore the city's highlights.
