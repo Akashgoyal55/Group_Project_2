@@ -120,3 +120,19 @@ td {
 .selected {
   color: gold;
 }
+
+#submitButton {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 20px;
+  background-color: #0077b5;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+#submitButton:hover {
+  background-color: #006dae;
+}

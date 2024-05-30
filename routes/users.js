@@ -2,7 +2,7 @@ const express = require("express");
 const bcrypt = require("bcryptjs");
 const User = require("../models/User");
 const path = require("path");
-
+const UserData = require("../models/userData");
 const router = express.Router();
 
 // Register route
@@ -109,6 +109,32 @@ router.get("/logout", (req, res) => {
     }
     res.redirect("/");
   });
+});
+
+router.post('/userdata', async (req, res) => {
+  try {
+      // const { name, place, rating, date } = req.body;
+     
+      console.log(req.body);
+      const userDataToSave = [];
+      req.body.forEach(row =>{
+        const { name, place, rating, date } = row;
+        console.log(name,place, rating ,date );
+        userDataToSave.push(new UserData({
+          name,
+          place,
+          rating,
+          date
+      })
+); 
+
+      })
+     ;
+   UserData.insertMany(userDataToSave);
+  } catch (err) {
+      console.error(err);
+      res.status(500).json({ error: 'Server Error' });
+  }
 });
 
 module.exports = router;
