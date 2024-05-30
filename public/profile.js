@@ -1,7 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const addRowButton = document.getElementById("addRowButton");
   const placesTableBody = document.getElementById("places-table-body");
-
+  const userName = document.getElementById("userName");
+  const submitButton = document.getElementById("submitButton");
   addRowButton.addEventListener("click", function () {
     const newRow = document.createElement("tr");
 
@@ -89,5 +90,64 @@ document.addEventListener("DOMContentLoaded", function () {
     newRow.appendChild(ratingCell);
 
     placesTableBody.appendChild(newRow);
+    console.log(placesTableBody);
   });
+  submitButton.addEventListener("click", function () {
+    // Array to store data from each row
+    const rowData = [];
+  
+    // Iterate over each row in the table body
+    const rows = document.querySelectorAll("#places-table-body tr");
+    rows.forEach(row => {
+      // Object to store data from current row
+      const rowDataItem = {};
+      rowDataItem.name = userName.innerHTML;
+  
+      // Get place name
+      const placeSelect = row.querySelector("select");
+      rowDataItem.place = placeSelect.value;
+  
+      // Get date
+      const dateInput = row.querySelector("input[type='date']");
+      rowDataItem.date = dateInput.value;
+  
+      // Get rating
+      const starRating = row.querySelector(".star-rating");
+      const stars = starRating.querySelectorAll(".star");
+      rowDataItem.rating = 0;
+      stars.forEach((star, index) => {
+        if (star.classList.contains("selected")) {
+          rowDataItem.rating = index + 1;
+        }
+      });
+  
+      // Add rowDataItem to the array
+      rowData.push(rowDataItem);
+    });
+  
+    // Now you have all the row data in the `rowData` array
+    // You can send this data to the server using fetch or any other method
+  
+    // Example using fetch
+    fetch('/users/userdata', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(rowData),
+    })
+    .then(response => {
+      if (response.ok) {
+        console.log('Data sent successfully');
+        // Optionally, you can reset the table or perform any other actions here
+      } else {
+        console.error('Failed to send data');
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+    });
+  });
+   
+  
 });

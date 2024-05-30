@@ -1,0 +1,26 @@
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+// Create Schema
+const UserProfileSchema = new Schema({
+    name:{
+        type:String,
+        required:true
+    },
+    place: {
+        type: String,
+        required: true
+    },
+    rating: {
+        type: Number,
+        required: true,
+   
+    },
+    
+    date: {
+        type: Date,
+      
+    }
+});
+
+module.exports = mongoose.model('userData', UserProfileSchema);
